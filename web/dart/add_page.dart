@@ -32,10 +32,10 @@ class AddPage {
     closeButton.text = 'X';
     querySelector('#overlay-div').append(closeButton);
     
-    closeButtonActions();
+    querySelector('#close-button').addEventListener('click', closeButtonActions);
   }
   
-  static void closeButtonActions() {
+  static void closeButtonActions(mouseEvent) {
     
   }
 }
