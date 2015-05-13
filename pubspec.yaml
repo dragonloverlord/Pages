@@ -1,0 +1,9 @@
+name: Pages
+description: A sample Dart Chrome packaged application
+dependencies:
+  chrome: any
+transformers:
+- chrome
+- $dart2js:
+    csp: true
+    minify: true
