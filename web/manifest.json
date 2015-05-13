@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Pages",
   "short_name": "Pages",
-  "description": "A simple bookmarking ",
+  "description": "A simple bookmarking app",
   "version": "0.0.8.8",
   "minimum_chrome_version": "38",
 
