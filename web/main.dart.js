@@ -1563,7 +1563,15 @@ var $$ = {};
     J.setAttribute$2$x(t1, "id", $.id0);
     J.set$text$x($.closeButton, "X");
     document.querySelector("#overlay-div").appendChild($.closeButton);
-  }, "call$1", "AddPage_addPageDialog$closure", 2, 0, 0]
+    J.addEventListener$2$x(document.querySelector("#close-button"), "click", O.AddPage_closeButtonActions$closure());
+  }, "call$1", "AddPage_addPageDialog$closure", 2, 0, 0],
+  AddPage_closeButtonActions: [function(mouseEvent) {
+    var t1, t2;
+    t1 = document.querySelector("#overlay-div");
+    t2 = t1.parentNode;
+    if (t2 != null)
+      t2.removeChild(t1);
+  }, "call$1", "AddPage_closeButtonActions$closure", 2, 0, 0]
 }],
 ["main.links", "file:///4C38075FE06DCACAB63E36365DFB1CE5:chrome-Pages/web/dart/links.dart", , U, {
   "^": "",

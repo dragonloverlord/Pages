@@ -36,6 +36,6 @@ class AddPage {
   }
   
   static void closeButtonActions(mouseEvent) {
-    
+    querySelector('#overlay-div').remove();
   }
 }
