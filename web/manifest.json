@@ -3,7 +3,7 @@
   "name": "Pages",
   "short_name": "Pages",
   "description": "A simple bookmarking app",
-  "version": "0.1.0.6",
+  "version": "0.1.0.8",
   "author": "dragonloverlord",
   "offline_enabled": false,
   "minimum_chrome_version": "38",
