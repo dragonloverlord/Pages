@@ -45,8 +45,7 @@ html, body {
 #overlay-div{
   width:100vw;
   height:100vh;
-  background-color:#000;
-  opacity:0.5;
+  background-color:rgba(0, 0, 0, 0.5);
   top:0;
   left:0;
   position:absolute;
@@ -63,7 +62,7 @@ html, body {
   font-family:'Roboto', arial, sans-serif;
   font-size:100%;
   font-weight:bold;
-  opacity:1.0;
+  opacity:1 !important;
   float:right;
   margin-right:2vw;
 }
@@ -71,12 +70,16 @@ html, body {
 #form-div{
   width:50vw;
   height:50vh;
-  background-color:#fff;
+  margin-top:25vh;
+  margin-right:auto;
+  margin-left:auto;
+  background-color:#ffffff;
   border:3px solid #aaa;
   border-radius:6px;
   font-family:'Roboto', arial, sans-serif;
   font-size:1rem;
-  opacity:1.0;
+  float:both;
+  opacity:1 !important;
 }
 
 .float-left{
