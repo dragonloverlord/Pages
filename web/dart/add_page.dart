@@ -2,6 +2,8 @@ library main.add_page;
 
 import 'dart:html';
 
+import 'form.dart';
+
 String id = null;
 Element overlayDiv = null;
 Element closeButton = null;
@@ -16,6 +18,7 @@ class AddPage {
   static void addPageDialog(mouseEvent) {
     addShader();
     addCloseButton();
+    Form.addForm();
   }
   
   static void addShader() {
