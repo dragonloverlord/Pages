@@ -7,7 +7,7 @@ Element formDiv = null;
 class Form {
   static void addForm(){
     formDiv = new Element.tag('div');
-    formDiv.setAttribute('id', '#form-div');
+    formDiv.setAttribute('id', 'form-div');
     querySelector('#overlay-div').append(formDiv);
   }
 }
