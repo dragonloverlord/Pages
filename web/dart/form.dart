@@ -5,7 +5,10 @@ import 'dart:html';
 Element formDiv = null;
 Element textInputLabel = null;
 Element textInput = null;
+Element urlInputLabel = null;
 Element urlInput = null;
+Element submitButton = null;
+Element cancelButton = null;
 
 class Form {
   static void addForm(){
@@ -15,14 +18,17 @@ class Form {
     
     addTextInputLabel();
     addTextInput();
+    addUrlInputLabel();
     addUrlInput();
+    addSubmitButton();
+    addCancelButton();
   }
   
   static void addTextInputLabel(){
     textInputLabel = new Element.tag('span');
     textInputLabel.setAttribute('id', 'text-input-label');
     textInputLabel.setAttribute('class', 'input-label');
-    textInputLabel.text = 'Name:&nbsp;';
+    textInputLabel.text = 'Name: ';
     querySelector('#form-div').append(textInputLabel);
   }
   
@@ -35,6 +41,14 @@ class Form {
     querySelector('#form-div').append(textInput);
   }
   
+  static void addUrlInputLabel(){
+    urlInputLabel = new Element.tag('span');
+    urlInputLabel.setAttribute('id', 'url-input-label');
+    urlInputLabel.setAttribute('class', 'input-label');
+    urlInputLabel.text = 'URL: ';
+    querySelector('#form-div').append(urlInputLabel);
+  }
+  
   static void addUrlInput(){
     urlInput = new Element.tag('input');
     urlInput.setAttribute('id', 'url-input');
@@ -42,5 +56,23 @@ class Form {
     urlInput.setAttribute('type', 'text');
     urlInput.setAttribute('label', 'Url');
     querySelector('#form-div').append(urlInput);
+  }
+  
+  static void addSubmitButton(){
+    submitButton = new Element.tag('button');
+    submitButton.setAttribute('id', 'submit-button');
+    submitButton.setAttribute('class', 'form-button');
+    submitButton.setAttribute('label', 'Submit');
+    submitButton.text = 'Submit';
+    querySelector('#form-div').append(submitButton);
+  }
+  
+  static void addCancelButton(){
+    cancelButton = new Element.tag('button');
+    cancelButton.setAttribute('id', 'cancel-button');
+    cancelButton.setAttribute('class', 'form-button');
+    cancelButton.setAttribute('label', 'Cancel');
+    cancelButton.text = 'Cancel';
+    querySelector('#form-div').append(cancelButton);
   }
 }
