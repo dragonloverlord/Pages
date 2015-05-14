@@ -1564,6 +1564,10 @@ var $$ = {};
     J.set$text$x($.closeButton, "X");
     document.querySelector("#overlay-div").appendChild($.closeButton);
     J.addEventListener$2$x(document.querySelector("#close-button"), "click", O.AddPage_closeButtonActions$closure());
+    t1 = W._ElementFactoryProvider_createElement_tag("div", null);
+    $.formDiv = t1;
+    J.setAttribute$2$x(t1, "id", "form-div");
+    document.querySelector("#overlay-div").appendChild($.formDiv);
   }, "call$1", "AddPage_addPageDialog$closure", 2, 0, 0],
   AddPage_closeButtonActions: [function(mouseEvent) {
     var t1, t2;
@@ -1860,6 +1864,7 @@ $.initNativeDispatchFlag = null;
 $.id0 = null;
 $.overlayDiv = null;
 $.closeButton = null;
+$.formDiv = null;
 $.url = null;
 $.text = null;
 $.id = null;
