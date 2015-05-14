@@ -1552,62 +1552,48 @@ var $$ = {};
   "^": "",
   AddPage_addPageDialog: [function(mouseEvent) {
     var t1;
-    $.id0 = "overlay-div";
+    $.id = "overlay-div";
     t1 = W._ElementFactoryProvider_createElement_tag("div", null);
     $.overlayDiv = t1;
-    J.setAttribute$2$x(t1, "id", $.id0);
-    document.querySelector("#body").appendChild($.overlayDiv);
-    $.id0 = "close-button";
+    J.setAttribute$2$x(t1, "id", $.id);
+    document.querySelector("#body").appendChild($.get$overlayDiv());
+    $.id = "close-button";
     t1 = W._ElementFactoryProvider_createElement_tag("button", null);
     $.closeButton = t1;
-    J.setAttribute$2$x(t1, "id", $.id0);
-    J.set$text$x($.closeButton, "X");
-    document.querySelector("#overlay-div").appendChild($.closeButton);
+    J.setAttribute$2$x(t1, "id", $.id);
+    J.set$text$x($.get$closeButton(), "X");
+    document.querySelector("#overlay-div").appendChild($.get$closeButton());
     J.addEventListener$2$x(document.querySelector("#close-button"), "click", O.AddPage_closeButtonActions$closure());
-    t1 = W._ElementFactoryProvider_createElement_tag("div", null);
-    $.formDiv = t1;
-    J.setAttribute$2$x(t1, "id", "form-div");
-    document.querySelector("#overlay-div").appendChild($.formDiv);
-    t1 = W._ElementFactoryProvider_createElement_tag("span", null);
-    $.textInputLabel = t1;
-    J.setAttribute$2$x(t1, "id", "text-input-label");
-    J.setAttribute$2$x($.textInputLabel, "class", "input-label");
-    J.set$text$x($.textInputLabel, "Name: ");
-    document.querySelector("#form-div").appendChild($.textInputLabel);
-    t1 = W._ElementFactoryProvider_createElement_tag("input", null);
-    $.textInput = t1;
-    J.setAttribute$2$x(t1, "id", "text-input");
-    J.setAttribute$2$x($.textInput, "class", "input");
-    J.setAttribute$2$x($.textInput, "type", "text");
-    J.setAttribute$2$x($.textInput, "label", "Name");
-    document.querySelector("#form-div").appendChild($.textInput);
-    t1 = W._ElementFactoryProvider_createElement_tag("span", null);
-    $.urlInputLabel = t1;
-    J.setAttribute$2$x(t1, "id", "url-input-label");
-    J.setAttribute$2$x($.urlInputLabel, "class", "input-label");
-    J.set$text$x($.urlInputLabel, "URL: ");
-    document.querySelector("#form-div").appendChild($.urlInputLabel);
-    t1 = W._ElementFactoryProvider_createElement_tag("input", null);
-    $.urlInput = t1;
-    J.setAttribute$2$x(t1, "id", "url-input");
-    J.setAttribute$2$x($.urlInput, "class", "input");
-    J.setAttribute$2$x($.urlInput, "type", "text");
-    J.setAttribute$2$x($.urlInput, "label", "Url");
-    document.querySelector("#form-div").appendChild($.urlInput);
-    t1 = W._ElementFactoryProvider_createElement_tag("button", null);
-    $.submitButton = t1;
-    J.setAttribute$2$x(t1, "id", "submit-button");
-    J.setAttribute$2$x($.submitButton, "class", "form-button");
-    J.setAttribute$2$x($.submitButton, "label", "Submit");
-    J.set$text$x($.submitButton, "Submit");
-    document.querySelector("#form-div").appendChild($.submitButton);
-    t1 = W._ElementFactoryProvider_createElement_tag("button", null);
-    $.cancelButton = t1;
-    J.setAttribute$2$x(t1, "id", "cancel-button");
-    J.setAttribute$2$x($.cancelButton, "class", "form-button");
-    J.setAttribute$2$x($.cancelButton, "label", "Cancel");
-    J.set$text$x($.cancelButton, "Cancel");
-    document.querySelector("#form-div").appendChild($.cancelButton);
+    J.setAttribute$2$x($.get$formDiv(), "id", "form-div");
+    document.querySelector("#overlay-div").appendChild($.get$formDiv());
+    J.setAttribute$2$x($.get$textInputLabel(), "id", "text-input-label");
+    J.setAttribute$2$x($.get$textInputLabel(), "class", "input-label");
+    J.set$text$x($.get$textInputLabel(), "Name: ");
+    document.querySelector("#form-div").appendChild($.get$textInputLabel());
+    J.setAttribute$2$x($.get$textInput(), "id", "text-input");
+    J.setAttribute$2$x($.get$textInput(), "class", "input");
+    J.setAttribute$2$x($.get$textInput(), "type", "text");
+    J.setAttribute$2$x($.get$textInput(), "label", "Name");
+    document.querySelector("#form-div").appendChild($.get$textInput());
+    J.setAttribute$2$x($.get$urlInputLabel(), "id", "url-input-label");
+    J.setAttribute$2$x($.get$urlInputLabel(), "class", "input-label");
+    J.set$text$x($.get$urlInputLabel(), "URL: ");
+    document.querySelector("#form-div").appendChild($.get$urlInputLabel());
+    J.setAttribute$2$x($.get$urlInput(), "id", "url-input");
+    J.setAttribute$2$x($.get$urlInput(), "class", "input");
+    J.setAttribute$2$x($.get$urlInput(), "type", "text");
+    J.setAttribute$2$x($.get$urlInput(), "label", "Url");
+    document.querySelector("#form-div").appendChild($.get$urlInput());
+    J.setAttribute$2$x($.get$submitButton(), "id", "submit-button");
+    J.setAttribute$2$x($.get$submitButton(), "class", "form-button");
+    J.setAttribute$2$x($.get$submitButton(), "label", "Submit");
+    J.set$text$x($.get$submitButton(), "Submit");
+    document.querySelector("#form-div").appendChild($.get$submitButton());
+    J.setAttribute$2$x($.get$cancelButton(), "id", "cancel-button");
+    J.setAttribute$2$x($.get$cancelButton(), "class", "form-button");
+    J.setAttribute$2$x($.get$cancelButton(), "label", "Cancel");
+    J.set$text$x($.get$cancelButton(), "Cancel");
+    document.querySelector("#form-div").appendChild($.get$cancelButton());
   }, "call$1", "AddPage_addPageDialog$closure", 2, 0, 0],
   AddPage_closeButtonActions: [function(mouseEvent) {
     var t1, t2;
@@ -1620,38 +1606,26 @@ var $$ = {};
 ["main.links", "file:///4C38075FE06DCACAB63E36365DFB1CE5:chrome-Pages/web/dart/links.dart", , U, {
   "^": "",
   Links_addLink: function(url, text) {
-    var t1, t2;
-    $.id = "build";
-    $.containerId = "#build";
-    $.linkId = "#build-link";
-    t1 = W._ElementFactoryProvider_createElement_tag("div", null);
+    var t1 = W._ElementFactoryProvider_createElement_tag("div", null);
     $.container = t1;
     J.setAttribute$2$x(t1, "class", "link-box");
-    J.setAttribute$2$x($.container, "id", $.id);
-    document.querySelector("#main-container").appendChild($.container);
+    J.setAttribute$2$x($.get$container(), "id", "build");
+    document.querySelector("#main-container").appendChild($.get$container());
     t1 = W._ElementFactoryProvider_createElement_tag("a", null);
     $.link = t1;
     J.setAttribute$2$x(t1, "class", "link");
-    J.setAttribute$2$x($.link, "href", url);
-    J.setAttribute$2$x($.link, "target", "_blank");
-    t1 = $.link;
-    t2 = $.id;
-    if (typeof t2 !== "string")
-      return t2.$add();
-    J.setAttribute$2$x(t1, "id", t2 + "-link");
-    t2 = $.containerId;
-    document.querySelector(t2).appendChild($.link);
-    t2 = W._ElementFactoryProvider_createElement_tag("button", null);
-    $.linkHolder = t2;
-    J.setAttribute$2$x(t2, "class", "link-holder");
-    J.setAttribute$2$x($.linkHolder, "type", "button");
-    J.appendText$1$x($.linkHolder, text);
-    t2 = $.linkId;
-    document.querySelector(t2).appendChild($.linkHolder);
-    t2 = C.JSString_methods.$add("#", $.id);
-    document.querySelector(t2).setAttribute("id", "complete");
-    t2 = C.JSString_methods.$add("#", $.id) + "-link";
-    document.querySelector(t2).setAttribute("id", "complete-link");
+    J.setAttribute$2$x($.get$link(), "href", url);
+    J.setAttribute$2$x($.get$link(), "target", "_blank");
+    J.setAttribute$2$x($.get$link(), "id", "build-link");
+    document.querySelector("#build").appendChild($.get$link());
+    t1 = W._ElementFactoryProvider_createElement_tag("button", null);
+    $.linkHolder = t1;
+    J.setAttribute$2$x(t1, "class", "link-holder");
+    J.setAttribute$2$x($.get$linkHolder(), "type", "button");
+    J.appendText$1$x($.get$linkHolder(), text);
+    document.querySelector("#build-link").appendChild($.get$linkHolder());
+    document.querySelector("#build").setAttribute("id", "complete");
+    document.querySelector("#build-link").setAttribute("id", "complete-link");
   }
 }],
 ]);
@@ -1901,26 +1875,47 @@ $.prototypeForTagFunction = null;
 $.dispatchRecordsForInstanceTags = null;
 $.interceptorsForUncacheableTags = null;
 $.initNativeDispatchFlag = null;
-$.id0 = null;
-$.overlayDiv = null;
-$.closeButton = null;
-$.formDiv = null;
-$.textInputLabel = null;
-$.textInput = null;
-$.urlInputLabel = null;
-$.urlInput = null;
-$.submitButton = null;
-$.cancelButton = null;
-$.url = null;
-$.text = null;
-$.id = null;
-$.containerId = null;
-$.linkId = null;
-$.container = null;
-$.linkHolder = null;
-$.link = null;
+$.id = "blank";
+$.url = "blank";
+$.text = "blank";
 Isolate.$lazy($, "_toStringVisiting", "IterableBase__toStringVisiting", "get$IterableBase__toStringVisiting", function() {
   return [];
+});
+Isolate.$lazy($, "overlayDiv", "overlayDiv", "get$overlayDiv", function() {
+  return W._ElementFactoryProvider_createElement_tag("div", null);
+});
+Isolate.$lazy($, "closeButton", "closeButton", "get$closeButton", function() {
+  return W._ElementFactoryProvider_createElement_tag("button", null);
+});
+Isolate.$lazy($, "formDiv", "formDiv", "get$formDiv", function() {
+  return W._ElementFactoryProvider_createElement_tag("div", null);
+});
+Isolate.$lazy($, "textInputLabel", "textInputLabel", "get$textInputLabel", function() {
+  return W._ElementFactoryProvider_createElement_tag("span", null);
+});
+Isolate.$lazy($, "textInput", "textInput", "get$textInput", function() {
+  return W._ElementFactoryProvider_createElement_tag("input", null);
+});
+Isolate.$lazy($, "urlInputLabel", "urlInputLabel", "get$urlInputLabel", function() {
+  return W._ElementFactoryProvider_createElement_tag("span", null);
+});
+Isolate.$lazy($, "urlInput", "urlInput", "get$urlInput", function() {
+  return W._ElementFactoryProvider_createElement_tag("input", null);
+});
+Isolate.$lazy($, "submitButton", "submitButton", "get$submitButton", function() {
+  return W._ElementFactoryProvider_createElement_tag("button", null);
+});
+Isolate.$lazy($, "cancelButton", "cancelButton", "get$cancelButton", function() {
+  return W._ElementFactoryProvider_createElement_tag("button", null);
+});
+Isolate.$lazy($, "container", "container", "get$container", function() {
+  return W._ElementFactoryProvider_createElement_tag("div", null);
+});
+Isolate.$lazy($, "linkHolder", "linkHolder", "get$linkHolder", function() {
+  return W._ElementFactoryProvider_createElement_tag("button", null);
+});
+Isolate.$lazy($, "link", "link", "get$link", function() {
+  return W._ElementFactoryProvider_createElement_tag("a", null);
 });
 // Native classes
 
