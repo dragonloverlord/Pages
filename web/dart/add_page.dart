@@ -4,11 +4,10 @@ import 'dart:html';
 
 import 'form.dart';
 
-String id = null;
-Element overlayDiv = null;
-Element closeButton = null;
-Element iframeContainer = null;
-Element iframe = null;
+String id = 'blank';
+Element overlayDiv = new Element.tag('div');
+Element closeButton = new Element.tag('button');
+
 
 class AddPage {
   static void main() {
