@@ -5,6 +5,7 @@
   "description": "A simple bookmarking app",
   "version": "0.0.9.0",
   "author": "dragonloverlord",
+  "offline_enabled":false,
   "minimum_chrome_version": "38",
 
   "icons": {
