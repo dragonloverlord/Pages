@@ -13,6 +13,7 @@ Element cancelButton = new Element.tag('button');
 
 class Form {
   static void addForm(){
+    formDiv = new Element.tag('div');
     formDiv.setAttribute('id', 'form-div');
     querySelector('#overlay-div').append(formDiv);
     
@@ -25,6 +26,7 @@ class Form {
   }
   
   static void addTextInputLabel(){
+    textInputLabel = new Element.tag('span');
     textInputLabel.setAttribute('id', 'text-input-label');
     textInputLabel.setAttribute('class', 'input-label');
     textInputLabel.text = 'Name: ';
@@ -32,6 +34,7 @@ class Form {
   }
   
   static void addTextInput(){
+    textInput = new Element.tag('input');
     textInput.setAttribute('id', 'text-input');
     textInput.setAttribute('class', 'input');
     textInput.setAttribute('type', 'text');
@@ -40,6 +43,7 @@ class Form {
   }
   
   static void addUrlInputLabel(){
+    urlInputLabel = new Element.tag('span');
     urlInputLabel.setAttribute('id', 'url-input-label');
     urlInputLabel.setAttribute('class', 'input-label');
     urlInputLabel.text = 'URL: ';
@@ -47,6 +51,7 @@ class Form {
   }
   
   static void addUrlInput(){
+    urlInput = new Element.tag('input');
     urlInput.setAttribute('id', 'url-input');
     urlInput.setAttribute('class', 'input');
     urlInput.setAttribute('type', 'text');
@@ -55,6 +60,7 @@ class Form {
   }
   
   static void addSubmitButton(){
+    submitButton = new Element.tag('button');
     submitButton.setAttribute('id', 'submit-button');
     submitButton.setAttribute('class', 'form-button');
     submitButton.setAttribute('label', 'Submit');
@@ -63,6 +69,7 @@ class Form {
   }
   
   static void addCancelButton(){
+    cancelButton = new Element.tag('button');
     cancelButton.setAttribute('id', 'cancel-button');
     cancelButton.setAttribute('class', 'form-button');
     cancelButton.setAttribute('label', 'Cancel');

@@ -4,7 +4,6 @@ import 'dart:html';
 
 import 'form.dart';
 
-String id = 'blank';
 Element overlayDiv = new Element.tag('div');
 Element closeButton = new Element.tag('button');
 
@@ -21,16 +20,14 @@ class AddPage {
   }
   
   static void addShader() {
-    id = 'overlay-div';
     overlayDiv = new Element.tag('div');
-    overlayDiv.setAttribute('id', id);
+    overlayDiv.setAttribute('id', 'overlay-div');
     querySelector('#body').append(overlayDiv);
   }
   
   static void addCloseButton() {
-    id = 'close-button';
     closeButton = new Element.tag('button');
-    closeButton.setAttribute('id', id);
+    closeButton.setAttribute('id', 'close-button');
     closeButton.text = 'X';
     querySelector('#overlay-div').append(closeButton);
     
