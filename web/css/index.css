@@ -120,7 +120,7 @@ html, body {
 }
 
 .input{
-  width:90%;
+  width:auto;
   height:auto;
   margin-top:1%;
   font-family:'Roboto', arial, sans-serif;
@@ -130,7 +130,6 @@ html, body {
 }
 
 .input-label{
-  margin-left:1%;
   margin-top:1%;
   font-family:'Roboto', arial, sans-serif;
   font-size:1rem;
