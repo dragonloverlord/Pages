@@ -1,5 +1,5 @@
 name: Pages
-description: A sample Dart Chrome packaged application
+description: A simple bookmark app for chrome that is made with dart
 dependencies:
   chrome: any
 transformers:
