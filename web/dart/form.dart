@@ -2,6 +2,8 @@ library main.add_page.form;
 
 import 'dart:html';
 
+import 'logic.dart';
+
 Element formDiv = new Element.tag('div');
 Element textInputLabel = new Element.tag('span');
 Element textInput = new Element.tag('input');
@@ -23,6 +25,8 @@ class Form {
     addUrlInput();
     addSubmitButton();
     addCancelButton();
+
+    Logic.main();
   }
   
   static void addTextInputLabel(){
